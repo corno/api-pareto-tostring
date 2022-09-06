@@ -1,8 +1,8 @@
 import * as pt from "pareto-core-types"
 
-export type FGetArrayAsString = <T>(
+export type FGetArrayAsString = (
     $: {
-        readonly "array": pt.Array<T>,
+        readonly "array": pt.Array<string>,
         readonly "separator"?: string
     }
 ) => string
