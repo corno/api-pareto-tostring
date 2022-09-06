@@ -1,5 +1,8 @@
 import * as pt from "pareto-core-types"
 
 export type FGetKeysAsString = <T>(
-    $: pt.Dictionary<T>
+    $: {
+        dictionary: pt.Dictionary<T>,
+        separator?: string
+    }
 ) => string

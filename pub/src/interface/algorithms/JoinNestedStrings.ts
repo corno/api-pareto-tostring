@@ -1,5 +1,8 @@
 import * as pt from "pareto-core-types"
 
 export type FJoinNestedString = (
-    $: pt.Nested<string>
+    $: {
+        strings: pt.Nested<string>
+        separator?: string
+    }
 ) => string
